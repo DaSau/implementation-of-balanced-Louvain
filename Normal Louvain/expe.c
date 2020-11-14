@@ -157,7 +157,6 @@ int main(void)
      runExpe(15*1000, 50*1000+1, 5000, output, 1.0/6.0, 0.0001, 0);
      runExpe(100*1000, 100*1000+1, 5000, output, 1/8.0, 0.00005, 0);
 
-     system("rm history");
      return 0;
 }
 
