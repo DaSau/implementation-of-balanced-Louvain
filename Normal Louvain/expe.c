@@ -151,14 +151,13 @@ void runExpe(int init, int end, int step, FILE* output, float scale, float ERROR
 
 int main(void)
 {
-     //FILE * output = fopen("biouput", "w");
-     FILE * output = fopen("ouput", "w");
+     FILE * output = fopen("history", "w");
 
      runExpe(1000, 10*1000+1, 1000, output, 1.0/4.0, 0.001, 0);
      runExpe(15*1000, 50*1000+1, 5000, output, 1.0/6.0, 0.0001, 0);
      runExpe(100*1000, 100*1000+1, 5000, output, 1/8.0, 0.00005, 0);
 
-     system(("rm ouput").c_str())
+     system("rm history");
      return 0;
 }
 
